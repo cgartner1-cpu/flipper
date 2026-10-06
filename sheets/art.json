@@ -1,0 +1,396 @@
+{
+ "sheet": "art",
+ "about": "Every Hades image the mod uses. Nothing here ships: the in-mod extractor reads these entries from the player's own Hades install on first launch and caches converted PNGs in the mod's local data folder. '?' = not yet looked up in real Hades files (needs a Hades install to inspect).",
+ "columns": {
+  "id": "row id",
+  "used_by": "row in another sheet (or 'player')",
+  "subject": "what the image shows",
+  "hades_package": "Hades Content/Win/Packages/*.pkg holding it",
+  "hades_entries": "texture/atlas entry names inside that package",
+  "target_layout": "layouts.json row describing the Stardew sheet to build",
+  "fit": "downscale method",
+  "verified": "true once seen correct in the running game"
+ },
+ "rows": [
+  {
+   "id": "art_zagreus_sprite",
+   "used_by": "player",
+   "subject": "Zagreus walking/idle frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_farmer_16x32_4dir",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_hades_sprite",
+   "used_by": "v_lewis",
+   "subject": "Hades walking/idle frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_npc_16x32_4dir",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_hades_portrait",
+   "used_by": "v_lewis",
+   "subject": "Hades dialogue portrait",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_portrait_64x64_x6",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_nyx_sprite",
+   "used_by": "v_robin",
+   "subject": "Nyx walking/idle frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_npc_16x32_4dir",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_nyx_portrait",
+   "used_by": "v_robin",
+   "subject": "Nyx dialogue portrait",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_portrait_64x64_x6",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_dusa_sprite",
+   "used_by": "v_clint",
+   "subject": "Dusa walking/idle frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_npc_16x32_4dir",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_dusa_portrait",
+   "used_by": "v_clint",
+   "subject": "Dusa dialogue portrait",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_portrait_64x64_x6",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_charon_sprite",
+   "used_by": "v_pierre",
+   "subject": "Charon walking/idle frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_npc_16x32_4dir",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_charon_portrait",
+   "used_by": "v_pierre",
+   "subject": "Charon dialogue portrait",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_portrait_64x64_x6",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_megaera_sprite",
+   "used_by": "v_abigail",
+   "subject": "Megaera walking/idle frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_npc_16x32_4dir",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_megaera_portrait",
+   "used_by": "v_abigail",
+   "subject": "Megaera dialogue portrait",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_portrait_64x64_x6",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_thanatos_sprite",
+   "used_by": "v_sebastian",
+   "subject": "Thanatos walking/idle frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_npc_16x32_4dir",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_thanatos_portrait",
+   "used_by": "v_sebastian",
+   "subject": "Thanatos dialogue portrait",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_portrait_64x64_x6",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_persephone_sprite",
+   "used_by": "v_emily",
+   "subject": "Persephone walking/idle frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_npc_16x32_4dir",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_persephone_portrait",
+   "used_by": "v_emily",
+   "subject": "Persephone dialogue portrait",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_portrait_64x64_x6",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_hypnos_sprite",
+   "used_by": "v_gus",
+   "subject": "Hypnos walking/idle frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_npc_16x32_4dir",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_hypnos_portrait",
+   "used_by": "v_gus",
+   "subject": "Hypnos dialogue portrait",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "stardew_portrait_64x64_x6",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_numbskull",
+   "used_by": "e_numbskull",
+   "subject": "Numbskull frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "match_vanilla_monster_sheet",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_pest",
+   "used_by": "e_pest",
+   "subject": "Wretched Pest frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "match_vanilla_monster_sheet",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_thug",
+   "used_by": "e_thug",
+   "subject": "Wretched Thug frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "match_vanilla_monster_sheet",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_witch",
+   "used_by": "e_witch",
+   "subject": "Wretched Witch frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "match_vanilla_monster_sheet",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_wringer",
+   "used_by": "e_wringer",
+   "subject": "Wringer frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "match_vanilla_monster_sheet",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_bloodless",
+   "used_by": "e_bloodless",
+   "subject": "Bloodless frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "match_vanilla_monster_sheet",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_gorgon",
+   "used_by": "e_gorgon",
+   "subject": "Gorgon frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "match_vanilla_monster_sheet",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_spreader",
+   "used_by": "e_spreader",
+   "subject": "Spreader frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "match_vanilla_monster_sheet",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_greatshield",
+   "used_by": "e_greatshield",
+   "subject": "Exalted Greatshield frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "match_vanilla_monster_sheet",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_soulcatcher",
+   "used_by": "e_soulcatcher",
+   "subject": "Soul Catcher frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "match_vanilla_monster_sheet",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_brimstone",
+   "used_by": "e_brimstone",
+   "subject": "Brimstone frames",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "match_vanilla_monster_sheet",
+   "fit": "area_downscale_then_palette",
+   "verified": false
+  },
+  {
+   "id": "art_boon_orb",
+   "used_by": "sys_orb_spawn",
+   "subject": "boon orb (one sheet, tinted per god)",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "orb_16x16_x4",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_icon_hermes",
+   "used_by": "b_hermes",
+   "subject": "Hermes boon icon",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "buff_icon_16x16",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_icon_ares",
+   "used_by": "b_ares",
+   "subject": "Ares boon icon",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "buff_icon_16x16",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_icon_athena",
+   "used_by": "b_athena",
+   "subject": "Athena boon icon",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "buff_icon_16x16",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_icon_artemis",
+   "used_by": "b_artemis",
+   "subject": "Artemis boon icon",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "buff_icon_16x16",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_icon_poseidon",
+   "used_by": "b_poseidon",
+   "subject": "Poseidon boon icon",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "buff_icon_16x16",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_icon_zeus",
+   "used_by": "b_zeus",
+   "subject": "Zeus boon icon",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "buff_icon_16x16",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_icon_dionysus",
+   "used_by": "b_dionysus",
+   "subject": "Dionysus boon icon",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "buff_icon_16x16",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_icon_aphrodite",
+   "used_by": "b_aphrodite",
+   "subject": "Aphrodite boon icon",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "buff_icon_16x16",
+   "fit": "area_downscale",
+   "verified": false
+  },
+  {
+   "id": "art_icon_demeter",
+   "used_by": "b_demeter",
+   "subject": "Demeter boon icon",
+   "hades_package": "?",
+   "hades_entries": "?",
+   "target_layout": "buff_icon_16x16",
+   "fit": "area_downscale",
+   "verified": false
+  }
+ ]
+}

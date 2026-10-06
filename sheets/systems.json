@@ -1,0 +1,118 @@
+{
+ "sheet": "systems",
+ "about": "Every game system and hook the mod touches. Each row becomes one class/registration in the generated code.",
+ "columns": {
+  "id": "row id",
+  "purpose": "what it does",
+  "stardew_hook": "SMAPI event or Harmony target",
+  "implements": "rows it serves (other sheets)",
+  "verified": "true once seen working in the running game"
+ },
+ "rows": [
+  {
+   "id": "sys_hades_locate",
+   "purpose": "Find the player's Hades folder: launch-time env var set by the Melty recipe, else Steam library scan",
+   "stardew_hook": "GameLoop.GameLaunched",
+   "implements": "art",
+   "verified": false
+  },
+  {
+   "id": "sys_art_extract",
+   "purpose": "Read Hades .pkg (LZ4 chunks, port of deppth MIT), cut entries from art.json, downscale to layouts.json, cache PNGs in mod data folder",
+   "stardew_hook": "GameLoop.GameLaunched",
+   "implements": "art,layouts",
+   "verified": false
+  },
+  {
+   "id": "sys_asset_replace",
+   "purpose": "Serve cached PNGs for villager sprites/portraits and monster textures",
+   "stardew_hook": "Content.AssetRequested",
+   "implements": "villagers,enemies",
+   "verified": false
+  },
+  {
+   "id": "sys_npc_names",
+   "purpose": "Change villager display names",
+   "stardew_hook": "Content.AssetRequested (Data/Characters DisplayName)",
+   "implements": "villagers",
+   "verified": false
+  },
+  {
+   "id": "sys_farmer_render",
+   "purpose": "Draw Zagreus instead of the layered farmer",
+   "stardew_hook": "Harmony prefix StardewValley.FarmerRenderer.draw",
+   "implements": "art_zagreus_sprite",
+   "verified": false
+  },
+  {
+   "id": "sys_monster_tune",
+   "purpose": "Rename and scale stats of reskinned monsters when they appear",
+   "stardew_hook": "World.NpcListChanged",
+   "implements": "enemies",
+   "verified": false
+  },
+  {
+   "id": "sys_orb_spawn",
+   "purpose": "Roll and place boon orbs per spawns.json, draw them, detect pickup",
+   "stardew_hook": "GameLoop.DayStarted, Player.Warped, Display.RenderedWorld, GameLoop.UpdateTicked",
+   "implements": "spawns,boons",
+   "verified": false
+  },
+  {
+   "id": "sys_boon_apply",
+   "purpose": "Grant a boon as a Stardew Buff until day end; stat boons via BuffEffects",
+   "stardew_hook": "Game1.player.applyBuff",
+   "implements": "boons",
+   "verified": false
+  },
+  {
+   "id": "sys_boon_clear",
+   "purpose": "Remove all boons when the day ends",
+   "stardew_hook": "GameLoop.DayEnding",
+   "implements": "boons",
+   "verified": false
+  },
+  {
+   "id": "sys_zeus_chain",
+   "purpose": "On monster hit, damage up to 3 monsters within 3 tiles",
+   "stardew_hook": "Harmony postfix GameLocation.damageMonster",
+   "implements": "b_zeus",
+   "verified": false
+  },
+  {
+   "id": "sys_dionysus_hangover",
+   "purpose": "Hit monsters take amount damage each second for 5s",
+   "stardew_hook": "Harmony postfix GameLocation.damageMonster + GameLoop.OneSecondUpdateTicked",
+   "implements": "b_dionysus",
+   "verified": false
+  },
+  {
+   "id": "sys_aphrodite_weak",
+   "purpose": "Hit monsters deal amount x damage for 10s",
+   "stardew_hook": "Harmony postfix GameLocation.damageMonster; prefix Farmer.takeDamage",
+   "implements": "b_aphrodite",
+   "verified": false
+  },
+  {
+   "id": "sys_demeter_growth",
+   "purpose": "At day end, crops watered today advance amount extra day",
+   "stardew_hook": "GameLoop.DayEnding",
+   "implements": "b_demeter",
+   "verified": false
+  },
+  {
+   "id": "sys_roaming_spawn",
+   "purpose": "Spawn enemy rows outside the Mines per spawns.json",
+   "stardew_hook": "GameLoop.TimeChanged",
+   "implements": "spawns,enemies",
+   "verified": false
+  },
+  {
+   "id": "sys_debug_cmds",
+   "purpose": "Console commands for testing: zag_orb <god>, zag_spawn <enemy>, zag_reextract",
+   "stardew_hook": "ConsoleCommands.Add",
+   "implements": "boons,enemies,art",
+   "verified": false
+  }
+ ]
+}

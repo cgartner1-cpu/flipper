@@ -1,0 +1,10 @@
+bin/
+obj/
+*.user
+.vs/
+# never commit game files or anything extracted from them
+extracted/
+cache/
+*.pkg
+*.pkg_manifest
+*.xnb

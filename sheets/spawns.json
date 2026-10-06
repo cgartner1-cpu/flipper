@@ -1,0 +1,26 @@
+{
+  "sheet": "spawns",
+  "about": "Where boon orbs and wandering Hades enemies appear outside normal Mines spawning. Rolled each morning (orbs) and each in-game hour (enemies).",
+  "columns": {
+    "id": "row id",
+    "kind": "orb or enemy",
+    "location": "Stardew location name, or MineShaft for any Mines floor",
+    "what": "boons.json row, enemies.json row, or 'any' (weighted pick from that sheet)",
+    "max_per_day": "cap per in-game day in this location",
+    "chance": "chance per roll (0-1)",
+    "time_window": "in-game time range, 24h HHMM-HHMM",
+    "verified": "true once seen working in the running game"
+  },
+  "rows": [
+    {"id":"s_orb_farm",     "kind":"orb",   "location":"Farm",      "what":"b_hermes",    "max_per_day":1, "chance":1.0,  "time_window":"0600-2600", "verified":false},
+    {"id":"s_orb_town",     "kind":"orb",   "location":"Town",      "what":"any",         "max_per_day":1, "chance":0.6,  "time_window":"0600-2600", "verified":false},
+    {"id":"s_orb_forest",   "kind":"orb",   "location":"Forest",    "what":"any",         "max_per_day":1, "chance":0.5,  "time_window":"0600-2600", "verified":false},
+    {"id":"s_orb_mountain", "kind":"orb",   "location":"Mountain",  "what":"any",         "max_per_day":1, "chance":0.5,  "time_window":"0600-2600", "verified":false},
+    {"id":"s_orb_beach",    "kind":"orb",   "location":"Beach",     "what":"any",         "max_per_day":1, "chance":0.4,  "time_window":"0600-2600", "verified":false},
+    {"id":"s_orb_mines",    "kind":"orb",   "location":"MineShaft", "what":"any",         "max_per_day":3, "chance":0.25, "time_window":"0600-2600", "verified":false},
+    {"id":"s_en_farm",      "kind":"enemy", "location":"Farm",      "what":"e_numbskull", "max_per_day":2, "chance":0.15, "time_window":"2000-2600", "verified":false},
+    {"id":"s_en_forest",    "kind":"enemy", "location":"Forest",    "what":"e_pest",      "max_per_day":3, "chance":0.2,  "time_window":"1800-2600", "verified":false},
+    {"id":"s_en_mountain",  "kind":"enemy", "location":"Mountain",  "what":"e_thug",      "max_per_day":2, "chance":0.15, "time_window":"1800-2600", "verified":false},
+    {"id":"s_en_town",      "kind":"enemy", "location":"Town",      "what":"e_witch",     "max_per_day":1, "chance":0.1,  "time_window":"2200-2600", "verified":false}
+  ]
+}

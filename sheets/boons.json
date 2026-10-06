@@ -1,0 +1,28 @@
+{
+  "sheet": "boons",
+  "about": "God boon orbs. Walking over an orb grants its boon until the day ends (removed on DayEnding). One boon per god at a time; a second orb of the same god refreshes it.",
+  "columns": {
+    "id": "row id",
+    "god": "Olympian",
+    "boon_name": "name shown on the buff icon",
+    "effect_kind": "stat = Stardew BuffEffects field; hook = systems.json row implementing it",
+    "stat_field": "BuffEffects field for stat boons, '-' for hook boons",
+    "amount": "stat delta, or the hook's tuning value",
+    "hook": "systems.json row for hook boons, '-' for stat boons",
+    "orb_color": "orb tint, hex",
+    "spawn_weight": "relative chance when an orb spawns",
+    "description": "one line shown on pickup",
+    "verified": "true once seen working in the running game"
+  },
+  "rows": [
+    {"id":"b_hermes",    "god":"Hermes",    "boon_name":"Greatest Reflex",   "effect_kind":"stat", "stat_field":"Speed",                   "amount":2,    "hook":"-",                 "orb_color":"#F2C14E", "spawn_weight":12, "description":"You move faster until the day ends.",                 "verified":false},
+    {"id":"b_ares",      "god":"Ares",      "boon_name":"Curse of Agony",    "effect_kind":"stat", "stat_field":"Attack",                  "amount":4,    "hook":"-",                 "orb_color":"#C0392B", "spawn_weight":10, "description":"Your weapons hit harder.",                            "verified":false},
+    {"id":"b_athena",    "god":"Athena",    "boon_name":"Divine Protection", "effect_kind":"stat", "stat_field":"Defense",                 "amount":4,    "hook":"-",                 "orb_color":"#E5D9A8", "spawn_weight":10, "description":"You take less damage.",                               "verified":false},
+    {"id":"b_artemis",   "god":"Artemis",   "boon_name":"Hunter's Mark",     "effect_kind":"stat", "stat_field":"CriticalChanceMultiplier","amount":1.0,  "hook":"-",                 "orb_color":"#7FB069", "spawn_weight":8,  "description":"Critical hits come far more often.",                  "verified":false},
+    {"id":"b_poseidon",  "god":"Poseidon",  "boon_name":"Tidal Dash",        "effect_kind":"stat", "stat_field":"KnockbackMultiplier",     "amount":1.0,  "hook":"-",                 "orb_color":"#3A86FF", "spawn_weight":8,  "description":"Your hits knock enemies far back.",                   "verified":false},
+    {"id":"b_zeus",      "god":"Zeus",      "boon_name":"Chain Lightning",   "effect_kind":"hook", "stat_field":"-",                       "amount":15,   "hook":"sys_zeus_chain",    "orb_color":"#FFE45E", "spawn_weight":7,  "description":"Hitting an enemy zaps up to 3 more nearby.",          "verified":false},
+    {"id":"b_dionysus",  "god":"Dionysus",  "boon_name":"Drunken Strike",    "effect_kind":"hook", "stat_field":"-",                       "amount":3,    "hook":"sys_dionysus_hangover", "orb_color":"#9B5DE5", "spawn_weight":6,  "description":"Enemies you hit take damage over time.",          "verified":false},
+    {"id":"b_aphrodite", "god":"Aphrodite", "boon_name":"Heartbreak Strike", "effect_kind":"hook", "stat_field":"-",                       "amount":0.5,  "hook":"sys_aphrodite_weak","orb_color":"#FF70A6", "spawn_weight":6,  "description":"Enemies you hit deal half damage for a while.",       "verified":false},
+    {"id":"b_demeter",   "god":"Demeter",   "boon_name":"Rare Crop",         "effect_kind":"hook", "stat_field":"-",                       "amount":1,    "hook":"sys_demeter_growth","orb_color":"#A8DADC", "spawn_weight":5,  "description":"Crops you water tonight grow an extra day.",          "verified":false}
+  ]
+}

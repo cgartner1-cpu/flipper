@@ -1,0 +1,10 @@
+{
+  "Name": "Zagreus Valley",
+  "Author": "TBD",
+  "Version": "0.1.0",
+  "Description": "Play Stardew Valley as Zagreus: Hades villagers, god boons and Hades enemies, with art read from your own Hades install.",
+  "UniqueID": "ZagreusValley.Core",
+  "EntryDll": "ZagreusValley.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": []
+}

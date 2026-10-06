@@ -1,0 +1,69 @@
+{
+ "sheet": "layouts",
+ "about": "Target Stardew sprite sheet shapes the extractor builds.",
+ "columns": {
+  "id": "row id",
+  "frame_w": "px",
+  "frame_h": "px",
+  "cols": "frames per row",
+  "rows": "rows",
+  "notes": "layout notes",
+  "verified": "checked against vanilla asset dimensions"
+ },
+ "rows": [
+  {
+   "id": "stardew_npc_16x32_4dir",
+   "frame_w": 16,
+   "frame_h": 32,
+   "cols": 4,
+   "rows": 4,
+   "notes": "rows: down, right, up, left; 4 walk frames each (vanilla villager sheets are taller; extra rows keep vanilla frames)",
+   "verified": false
+  },
+  {
+   "id": "stardew_farmer_16x32_4dir",
+   "frame_w": 16,
+   "frame_h": 32,
+   "cols": 4,
+   "rows": 4,
+   "notes": "drawn by sys_farmer_render instead of the layered farmer renderer",
+   "verified": false
+  },
+  {
+   "id": "stardew_portrait_64x64_x6",
+   "frame_w": 64,
+   "frame_h": 64,
+   "cols": 2,
+   "rows": 3,
+   "notes": "6 expressions; one Hades portrait reused when Hades lacks a matching expression",
+   "verified": false
+  },
+  {
+   "id": "match_vanilla_monster_sheet",
+   "frame_w": "vanilla",
+   "frame_h": "vanilla",
+   "cols": "vanilla",
+   "rows": "vanilla",
+   "notes": "read the vanilla texture's size at runtime and fill each frame",
+   "verified": false
+  },
+  {
+   "id": "orb_16x16_x4",
+   "frame_w": 16,
+   "frame_h": 16,
+   "cols": 4,
+   "rows": 1,
+   "notes": "pulse animation",
+   "verified": false
+  },
+  {
+   "id": "buff_icon_16x16",
+   "frame_w": 16,
+   "frame_h": 16,
+   "cols": 1,
+   "rows": 1,
+   "notes": "buff bar icon",
+   "verified": false
+  }
+ ]
+}

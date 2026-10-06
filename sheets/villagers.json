@@ -1,0 +1,25 @@
+{
+  "sheet": "villagers",
+  "about": "One row per Stardew villager recast as a Hades character. Only look and display name change in v0.1; dialogue and schedules stay vanilla.",
+  "columns": {
+    "id": "row id",
+    "stardew_npc": "Stardew internal NPC name (Data/Characters key)",
+    "hades_character": "who they become",
+    "display_name": "name shown in dialogue and the social tab",
+    "sprite_asset": "Stardew asset replaced with the walking sheet",
+    "portrait_asset": "Stardew asset replaced with the portrait sheet",
+    "hades_sprite_art": "art.json row used for the walking sheet",
+    "hades_portrait_art": "art.json row used for portraits",
+    "verified": "true once seen working in the running game"
+  },
+  "rows": [
+    {"id":"v_lewis",     "stardew_npc":"Lewis",     "hades_character":"Hades",       "display_name":"Hades",       "sprite_asset":"Characters/Lewis",     "portrait_asset":"Portraits/Lewis",     "hades_sprite_art":"art_hades_sprite",      "hades_portrait_art":"art_hades_portrait",      "verified":false},
+    {"id":"v_robin",     "stardew_npc":"Robin",     "hades_character":"Nyx",         "display_name":"Nyx",         "sprite_asset":"Characters/Robin",     "portrait_asset":"Portraits/Robin",     "hades_sprite_art":"art_nyx_sprite",        "hades_portrait_art":"art_nyx_portrait",        "verified":false},
+    {"id":"v_clint",     "stardew_npc":"Clint",     "hades_character":"Dusa",        "display_name":"Dusa",        "sprite_asset":"Characters/Clint",     "portrait_asset":"Portraits/Clint",     "hades_sprite_art":"art_dusa_sprite",       "hades_portrait_art":"art_dusa_portrait",       "verified":false},
+    {"id":"v_pierre",    "stardew_npc":"Pierre",    "hades_character":"Charon",      "display_name":"Charon",      "sprite_asset":"Characters/Pierre",    "portrait_asset":"Portraits/Pierre",    "hades_sprite_art":"art_charon_sprite",     "hades_portrait_art":"art_charon_portrait",     "verified":false},
+    {"id":"v_abigail",   "stardew_npc":"Abigail",   "hades_character":"Megaera",     "display_name":"Megaera",     "sprite_asset":"Characters/Abigail",   "portrait_asset":"Portraits/Abigail",   "hades_sprite_art":"art_megaera_sprite",    "hades_portrait_art":"art_megaera_portrait",    "verified":false},
+    {"id":"v_sebastian", "stardew_npc":"Sebastian", "hades_character":"Thanatos",    "display_name":"Thanatos",    "sprite_asset":"Characters/Sebastian", "portrait_asset":"Portraits/Sebastian", "hades_sprite_art":"art_thanatos_sprite",   "hades_portrait_art":"art_thanatos_portrait",   "verified":false},
+    {"id":"v_emily",     "stardew_npc":"Emily",     "hades_character":"Persephone",  "display_name":"Persephone",  "sprite_asset":"Characters/Emily",     "portrait_asset":"Portraits/Emily",     "hades_sprite_art":"art_persephone_sprite", "hades_portrait_art":"art_persephone_portrait", "verified":false},
+    {"id":"v_gus",       "stardew_npc":"Gus",       "hades_character":"Hypnos",      "display_name":"Hypnos",      "sprite_asset":"Characters/Gus",       "portrait_asset":"Portraits/Gus",       "hades_sprite_art":"art_hypnos_sprite",     "hades_portrait_art":"art_hypnos_portrait",     "verified":false}
+  ]
+}
